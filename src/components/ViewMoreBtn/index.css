@@ -1,0 +1,17 @@
+.view_more,.view_more:hover{
+    background: #F9C600;
+    box-shadow: 0px 4px 8px rgba(123, 126, 205, 0.32);
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: inline-block;
+    text-align: center;
+    color: #161731;
+    text-decoration: none;
+    font-size: 13px;
+}
+.view_more:active {
+    transform: scale(0.95);
+}
+/* .view_more:hover{
+    color: #fff;
+} */

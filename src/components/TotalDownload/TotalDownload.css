@@ -1,0 +1,37 @@
+.overview_sec{
+    padding:60px 4%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.going_sec{
+    position: absolute;
+    width: 70%;
+    top: -100%;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgb(63 46 165 / 25%);
+    border-radius: 47px;
+    padding: 30px 50px;
+}
+.over_head{
+    text-align: center;
+    color: #161731;
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+.totle_no{
+    font-size: 40px;
+    font-weight: 600;
+    color: #575574;
+}
+.totle_txt{
+    color: #575574;
+    font-weight: 500;
+}
+.totle_no_list{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 7%;
+}

@@ -1,0 +1,212 @@
+div.popular_sec{
+    padding:40px 4% 68px;
+}
+
+.popular_img_grid{
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(32%,1fr));
+    grid-gap: 10px;
+    grid-row-gap: 15px;
+}
+.popular_img_grid li{
+    cursor: pointer;
+    
+    border-radius: 12px;
+}
+.popular_img,.popular_img_grid li{
+    max-width: 544px;
+    max-height: 306px;
+    overflow: hidden;
+    position: relative;
+}
+.popular_img img{
+    object-fit: cover;
+    width: 544px;
+    height: 306px;
+}
+.popular_img_grid li:active {
+    transform: scale(0.95);
+}
+.popular_img_cont{
+    padding-top:10px;
+    font-size: 12px;
+}
+.top_img_con,.bottom_img_con{
+    position: absolute;
+    top:0;
+    min-height: 64px;
+    width: 100%;
+    background: linear-gradient(#0000007a,transparent);
+    opacity: 1;
+    top:0;
+    z-index: 1;
+    transition: all 1s;
+}
+.top_img_con{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 10px 0;
+    top:-100%;
+}
+.bottom_img_con{
+    top:auto;
+    bottom:0;
+    background: linear-gradient(to top,#0000007a,transparent);
+    padding: 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-height: 64px;
+    bottom:-100%;
+}
+.img_hover_btn{
+    width: 40px;
+    height: 40px;
+    background: #5755749c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0;
+    margin-right: 10px;
+    position: relative;
+    
+}
+.img_hover_btn img,.upload_user img{
+    object-fit: none;
+    width:auto;
+    height:auto;
+}
+.no_like{
+    position: absolute;
+    top: -7px;
+    left: -14px;
+    background: #ff3b3cd6;
+    width: 25px;
+    height: 26px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+.upload_user{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.upload_user_cont{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.popular_img_grid_item:hover .top_img_con,.popular_img_grid_item:hover .bottom_img_con{
+    opacity: 1;
+    top:0;
+    z-index: 8;
+}
+.popular_img_grid_item:hover .bottom_img_con{
+    top:auto;
+    bottom:0;
+}
+.btn_link{
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    color: #9390B2;
+    margin-left:30px
+}
+.btn_link.active{
+    border-bottom: 2px solid #161731;
+    font-weight: 600;
+    color:#161731;
+}
+div.cat_manu_sec{
+    padding:20px 4% 0;
+    border: 1px solid #30336a4d;
+    border-left:0;
+    border-right:0;
+    box-sizing: border-box;
+    margin-top:50px;
+}
+.cat_menu_fliter{
+    display: flex;
+    width: 100%;
+}
+.cat_menu_sec{
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+}
+.cat_fliter_sec{
+    width:12%;
+    min-width:120px;
+    padding-top: 5px;
+}
+.cat_fliter_sec button{
+    margin-left: auto;
+    float: right;
+    background: none;
+    border:0;
+    position: relative;
+}
+.cat_fliter_sec button::before{
+    content: " ";
+    position: absolute;
+    top: -3px;
+    left: -15px;
+    height: 28px;
+    background: #1A1A1A;
+    width: 1px;
+}
+.cat_fliter_sec button img{
+    margin-right:5px;
+    width: 20px;
+}
+.cat_menu_link{
+    color: #6B6888;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 10px 20px;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+}
+.cat_menu_link:hover{
+    color:#161731;
+}
+.cat_menu_link.active{
+    font-weight: 600;
+    border-bottom: 3px solid #161731;
+    color:#161731;
+}
+/*.tranding_head{
+    padding-bottom: 40px;
+}
+.tranding_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+@media (max-width: 1199.98px) { 
+    div.popular_sec{
+        padding: 40px 4% 40px;
+    }
+}
+@media (max-width: 991.98px) { 
+    .cat_menu_link{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,8 @@
+.collect_img_grid{
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(49%,1fr));
+    grid-gap: 10px;
+    grid-row-gap: 15px;
+}

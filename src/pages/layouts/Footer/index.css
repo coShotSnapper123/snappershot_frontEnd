@@ -1,0 +1,113 @@
+footer{
+    background: #161731;
+    color: #fff;
+    padding:72px 4% 16px;
+}
+footer ul li{
+    padding-bottom:10px;
+}
+footer ul a{
+    color: #fff;
+    text-decoration: none;
+}
+footer ul a:hover{
+    color:#F9C600;
+}
+.foot_head_h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.foot_head_h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.mb_16{
+    margin-bottom: 16px;
+}
+.mb_24{
+    margin-bottom: 24px;
+}
+.mb_30{
+    margin-bottom:30px;
+}
+div.foot_abt{
+    padding-right:15%;
+}
+.copy_right_sec{
+    margin-top:40px;
+}
+.foot_sub_btn{
+    padding: 10px;
+    border: 0;
+    min-width: 100px;
+    background: #F9C600;
+    color: #161731;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    z-index: 9;
+}
+footer .input-group input.form-control{
+    color: #9390B2;
+    font-size: 14px;
+    padding: 9px;
+    border-radius: 10px;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+.bottom_scroll.footer_scroll{
+    position: fixed;
+    right: 20px;
+    left: auto;
+    transform: rotate(180deg);
+    bottom:20px;
+}
+.cont_sec_foot ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-left: 0;
+}
+.cont_sec_foot ul a{
+    background: #b4b0d340;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+    margin-right: 12px;
+}
+.cont_sec_foot ul a img{
+    max-width: 20px;
+    max-height: 20px;
+}
+.cont_sec_foot{
+    padding-top: 30px;
+}
+.cont_sec_foot .foot_head_h3 {
+    margin-bottom: 14px;
+}
+.fb_link:hover{
+    background: #4267B2;
+}
+.insta_link:hover{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.twit_link:hover{
+    background: #00acee;
+}
+.in_link:hover{
+    background: #0e76a8;
+}
+@media (max-width: 1199.98px) { 
+    div.foot_abt {
+        padding-right: 3%;
+    }
+    footer{
+        padding:50px 4% 16px;
+    }
+}

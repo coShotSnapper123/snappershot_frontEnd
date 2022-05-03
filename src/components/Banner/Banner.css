@@ -1,0 +1,10 @@
+.banner_sec{
+    min-height: 567px;
+    background: #161731;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 70px 4%;
+}

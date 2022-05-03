@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+  font-size: 14px;
+  color: #161731;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-yellow{
+  background: #F9C600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg_light_pink{
+  background: #F9F5FF;
 }
-
-.App-link {
-  color: #61dafb;
+.display_h3{
+  font-size: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.mw_250{
+  min-width: 250px;
+}
+.btn_none,a.btn_none,.btn_none:hover,a.btn_none:hover{
+  background: none;
+  border:1px solid #fff;
+}
+.btn_color_white,a.btn_color_white,.btn_color_white:hover,a.btn_color_white:hover,.color_white{
+  color:#fff;
+}
+.pt-50{
+  padding-top:50px;
+}
+.btn_link{
+  background: none;
+  border: 0;
+  padding-bottom: 5px;
+}
+.pt_menu{
+  padding-top:74px;
+}
+.display_h5{
+  font-size: 24px;
+}
+.display_h4{
+  font-size: 28px;
+}
+.display_h4,.display_h3,.display_h5{
+  color: #161731;
+  font-weight: 700;
+}
+.fw_600{
+  font-weight: 600;
+}
+@media (max-width: 1199.98px) { 
+  .pt-50{
+    padding-top:30px;
   }
 }

@@ -1,0 +1,105 @@
+div.tranding_sec{
+    padding:68px 4%;
+}
+.tranding_head{
+    padding-bottom: 40px;
+}
+.tranding_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tranding_img_grid{
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(23%,1fr));
+    grid-gap: 20px;
+    grid-row-gap: 30px;
+}
+.tranding_img_grid li{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.tranding_img img{
+    border-radius: 12px;
+}
+.tranding_img_grid li:active {
+    transform: scale(0.95);
+}
+.tranding_img_cont{
+    padding-top:10px;
+    font-size: 12px;
+}
+.top_img_con,.bottom_img_con{
+    position: absolute;
+    top:0;
+    min-height: 64px;
+    width: 100%;
+    background: linear-gradient(#0000007a,transparent);
+    opacity: 1;
+    top:0;
+    z-index: 1;
+    transition: all 1s;
+}
+.top_img_con{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 10px 0;
+    top:-100%;
+}
+.bottom_img_con{
+    top:auto;
+    bottom:0;
+    background: linear-gradient(to top,#0000007a,transparent);
+    padding: 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-height: 64px;
+    bottom:-100%;
+}
+.img_hover_btn{
+    width: 40px;
+    height: 40px;
+    background: #5755749c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0;
+    margin-right: 10px;
+    position: relative;
+    
+}
+li img{
+    max-height: 270px;
+    overflow: hidden;
+}
+
+.tranding_img_grid_item:hover .top_img_con,.popular_img_grid_item:hover .bottom_img_con{
+    opacity: 1;
+    top:0;
+    z-index: 8;
+}
+.tranding_img_grid_item:hover .bottom_img_con{
+    top:auto;
+    bottom:0;
+}
+.tranding_img{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.tranding_img > div img{
+    border-radius: 0;
+}
+@media (max-width: 1199.98px) { 
+    div.tranding_sec{
+        padding:40px 4%;
+    }
+    .tranding_head{
+        padding-bottom: 30px;
+    }
+}

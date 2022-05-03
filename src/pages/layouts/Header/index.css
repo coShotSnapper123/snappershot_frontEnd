@@ -1,0 +1,123 @@
+nav.navbar{
+    padding: 25px 3% 0;
+}
+.navbar-brand,nav .nav-link,.navbar-brand,nav .nav-link:hover,.navbar-brand,nav .nav-link:active{
+    color: #fff;
+}
+.nav-item a.btn{
+    color: #161731;
+    box-shadow: 0px 4px 8px rgb(123 126 205 / 32%);
+    border-radius: 11px;
+    background: #F9C600;
+}
+.nav-item a{
+    padding: 7px 20px;
+    font-size: 14px;
+}
+.divider{
+    width: 1px;
+    height: 28px;
+    background: #9390B2;
+    margin-top: 6px;
+}
+.navbar.absolute_top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-brand img{
+    max-width: 100px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+}
+.navbar-expand-lg .navbar-nav .nav-link img {
+    max-width:17px;
+    margin-right:5px;
+}
+.fixed-top{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgb(44 48 133 / 8%);
+    transition: all 1s;
+  
+}
+nav.navbar.fixed-top{
+    
+    padding: 12px 3% 12px;
+}
+.fixed-top .nav-link {
+    color: #9390B2;
+}
+.fixed-top .nav-link.active{
+    color:#161731;
+    font-weight: 600;
+}
+
+.header_search_sec .input-group span{
+    padding: 10px 13px 10px 13px;
+    background: #fff;
+    border: 0;
+}
+.header_search_sec .input-group span img{
+    width:16px;
+}
+.header_search_sec .input-group input{
+    border:0;
+}
+.header_search_sec .input-group input:focus{
+    box-shadow: 0 0 0 0;
+}
+.header_search_sec .suggest_cateagory{
+    display: none;
+}
+.header_search_sec  .input-group{
+    border: 2px solid #E5E2F8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.header_search_sec{
+    min-width: 300px;
+}
+/* .mb_header{
+    margin-bottom: 75px;
+} */  
+.navbar-toggler:after,.navbar-toggler:before{
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top:8px;
+    right:0;
+    transition: all 0.5s;
+}
+.navbar-toggler{
+    width: 40px;
+    height: 35px;
+    position: relative;
+}
+.navbar-toggler:before{
+    top:auto;
+    bottom:8px;
+    width:80%;
+}
+.navbar-toggler[aria-expanded="true"]:before{
+    transform: rotate(135deg);
+    width: 80%;
+    top: 17px;
+}
+.navbar-toggler[aria-expanded="true"]:after{
+    transform: rotate(225deg);
+    top: 18px;
+    width: 80%;
+}
+nav .navbar-toggler:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+nav.fixed-top .nav-link:hover{
+    color:#9390B2;
+}

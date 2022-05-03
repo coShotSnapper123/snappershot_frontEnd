@@ -1,0 +1,18 @@
+.login_signup_btn_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_signup_btn_sec a{
+    margin-left:5px;
+    margin-right:5px;
+}
+.login_signup_banner_sec{
+    padding:70px 4%;
+    font-size: 24px;
+    background: #161731;
+}
+.login_signup_banner_content{
+    margin-bottom:20px;
+    font-weight: 700;
+}

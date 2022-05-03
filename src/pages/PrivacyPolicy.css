@@ -1,0 +1,27 @@
+.pp_sec{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.left_menu_list button{
+    color: #575574;
+    background: no-repeat;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 0;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.left_menu_list button.active{
+    border-left: 2px solid #F9C600;
+    padding-left: 10px;
+    color: #161731;
+    font-weight: 600;
+}
+.left_menu_list{
+    padding-top: 20px;
+}
+.pp_main_row{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}

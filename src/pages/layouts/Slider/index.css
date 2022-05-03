@@ -1,0 +1,131 @@
+.slides::before{
+    bottom: 0;
+    position: absolute;
+    content:'';
+    width: 100%;
+    top: 0;
+    background: radial-gradient(27.81% 87.9% at 30.23% 69.58%, #292B54 0%, #161731 100%);
+    opacity: 0.6;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.bottom_scroll{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #F9C600;
+    box-shadow: 0px 4px 8px rgb(123 126 205 / 32%);
+    position: absolute;
+    bottom: 30px;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%,0);
+    animation: jumpInfinite 1.6s infinite;
+    
+}
+.bottom_scroll img {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 23%);
+    
+  }
+  
+ 
+  .slider_sec{
+      position: relative;
+  }
+  
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+      bottom: 15px;
+    }
+    50% {
+      margin-top: 15px;
+      bottom: 30px;
+    }
+    100% {
+      margin-top: 0;
+      bottom: 15px;
+    }
+  }
+  
+  .slider_sec .carousel-caption {
+    top:150px;
+    bottom:auto;
+    max-height: 320px;
+}
+.slide_search, .slider_sec .carousel-caption {
+  max-width: 874px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slide_search_sec{
+  position: absolute;
+  top:490px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index:9;
+}
+.slide_search{
+  width:100%;
+}
+.sliderHeading{
+  font-size: 75px;
+  font-weight: 700;
+  line-height:1.3;
+}
+.sliderHeading span{
+  color:#f9c602;
+}
+.sliderContent{
+  font-size: 30px;
+}
+.slider_sec .carousel-caption  p {
+  margin-bottom: 0;
+}
+@media (max-width: 1199.98px) { 
+  .sliderHeading {
+      font-size: 60px;
+  }
+  .sliderContent{
+    font-size: 26px;
+  }
+  .slider_sec .carousel-caption{
+    top:110px;
+  }
+  .slide_search_sec{
+    top:380px;
+  }
+}
+@media (max-width: 991.98px) { 
+  .slide_search, .slider_sec .carousel-caption{
+    max-width: 80%;
+    width: 100%;
+    left: 10%;
+  }
+  .sliderHeading {
+    font-size: 44px;
+  }
+  .sliderContent{
+    font-size: 20px;
+  }
+  .slider_sec .carousel-caption{
+    top:90px;
+  }
+  .slide_search_sec{
+    top:290px;
+  }
+  .bottom_scroll{
+    width: 40px;
+    height:40px;
+  }
+  .bottom_scroll img{
+    top: calc(50% - 7px);
+    left: calc(50% - 25%);
+    width: 20px;
+  }
+}

@@ -1,0 +1,24 @@
+.slide_search .input-group{
+    border-radius: 14px;
+    overflow: hidden;
+}
+.slide_search .input-group span{
+    padding: 16px 13px 16px 24px;
+    background: #fff;
+    border: 0;
+}
+.slide_search .input-group input{
+    border:0;
+}
+.slide_search .input-group input:focus{
+    box-shadow: 0 0 0 0;
+}
+.suggest_cateagory{
+    color:#fff;
+    padding-left:15px;
+    padding-right:15px;
+}
+.suggest_cateagory span{
+    padding-left:10px;
+    padding-right:10px;
+}
