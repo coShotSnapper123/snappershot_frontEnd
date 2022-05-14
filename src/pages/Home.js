@@ -23,7 +23,7 @@ export default function Home() {
         <Popular />
         <TrandingSearches />
         <LoginSignupBanner />  
-        {/* <Collection /> */}
+        <Collection /> 
         <Contributor />
        
     </>

@@ -25,3 +25,16 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.pp_cont_col{
+    color: #575574;
+}
+.pp_cont_col .display_h6{
+    font-size: 14px ;
+    color: #161731;
+    font-weight: 600;
+    padding-top:20px;
+    padding-bottom: 10px; 
+}
+.pp_cont_col  .display_h5{
+    padding-bottom: 15px;
+}
