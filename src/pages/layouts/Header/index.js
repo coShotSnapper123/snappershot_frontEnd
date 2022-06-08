@@ -1,5 +1,5 @@
 import React,{useEffect, useState}from 'react'
-import { Link , NavLink,useLocation} from "react-router-dom"
+import { Link , NavLink,useLocation} from "react-router-dom";
 import "./index.css"
 import SliderSearch from '../../../components/SliderSearch';
 import LoginPopup from '../../../components/LoginPopup/LoginPopup';
@@ -14,6 +14,12 @@ export default function Header(props) {
    
     if(pathname === '/' || pathname==="/about"){
         console.log(pathname,"path " ,splitLocation)
+    }
+    function signUpPopUp(){
+        setLoginCheck(true)
+    }
+    function loginPopUp(){
+        setLoginCheck(false)
     }
 
   return (
@@ -56,10 +62,10 @@ export default function Header(props) {
                                 <span>Upload</span></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" to="#">Login</Link>
+                            <Link className="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" to="#" onClick={loginPopUp}>Login</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="btn btn-yellow" to="/">Sign Up</Link>
+                            <Link className="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" to="#" onClick={signUpPopUp}>Sign Up</Link>
                         </li>
                     </ul>
                 </div>

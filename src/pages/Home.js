@@ -15,11 +15,13 @@ export default function Home() {
   // useEffect(() => {
   //   window.addEventListener('scroll', handleScroll)
   // }, []);
+  
   return (
     <>
-
+        
         {/* <Header logoChange={fontSize < 600 ? false : true} scrollFixed={fontSize < 600 ? "absolute_top" : "fixed-top"}/> */}
         <Slider />
+       
         <Popular />
         <TrandingSearches />
         <LoginSignupBanner />  

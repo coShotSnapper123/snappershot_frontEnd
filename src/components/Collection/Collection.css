@@ -3,6 +3,75 @@
     padding-left: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(49%,1fr));
-    grid-gap: 10px;
-    grid-row-gap: 15px;
+    grid-gap: 20px;
+    grid-row-gap: 40px;
+}
+.imag_collect > ul.first_img_block,.imag_collect > ul.third_img_block{
+    display: grid;
+    grid-template-areas:
+        'menu menu main main right right'
+        'menu menu footer footer footer footer';
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+.imag_collect > ul.third_img_block{
+    display: grid;
+    grid-template-areas:
+    'menu footer footer footer footer footer'
+    'menu main main main right right';
+}
+.first_img_block li,.imag_collect > ul.third_img_block li{
+    text-align: center;
+    font-size: 30px;
+}
+.first_img_block li:first-child,.third_img_block li:first-child{
+    grid-area: menu;
+}
+.first_img_block li:nth-child(2),.third_img_block li:nth-child(2){
+    grid-area: main;
+}
+.first_img_block li:nth-child(3),.third_img_block li:nth-child(3){
+    grid-area: right;
+}
+.first_img_block li:nth-child(4),.third_img_block li:nth-child(4){
+    grid-area: footer;
+}
+.fourth_eql_block{
+    grid-row-gap: 18px;
+}
+.two_eql_block,.fourth_eql_block{
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(48%,1fr));
+    grid-gap: 15px;
+}
+.first_img_block li:first-child img,.third_img_block li:first-child img{
+    height: 517px;
+    max-height: 517px;
+}
+.collect_img_grid ul li{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.collect_img_grid ul li img {
+    object-fit: cover;
+    width: 100%;
+}
+.first_img_block li:nth-child(2) img, .third_img_block li:nth-child(2) img,.first_img_block li:nth-child(3) img, .third_img_block li:nth-child(3) img{
+    height: 240px;
+    max-height: 240px;
+}
+.first_img_block li:nth-child(4) img, .third_img_block li:nth-child(4) img{
+    height: 268px;
+    max-height: 270px;
+}
+.two_eql_block li img{
+    height: 517px;
+    max-height: 517px;
+}
+.fourth_eql_block li img{
+    max-height: 251px;
 }
