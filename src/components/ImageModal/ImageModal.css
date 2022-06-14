@@ -1,0 +1,94 @@
+.img-div {
+  max-width: 750px;
+  max-height: 506px;
+  overflow: hidden;
+  position: relative;
+}
+.img-div img {
+  object-fit: cover;
+  width: 750px;
+  height: 506px;
+}
+.mybtn {
+  width: 100%;
+}
+.mybtn:hover .bg-secondary {
+  background-color: #5c636a !important;
+}
+.download-btn {
+  background: #f9c500 !important;
+  border-color: #f9c500 !important;
+  max-width: 350px !important;
+  margin: 0 auto !important;
+  color: #000 !important;
+}
+.edit-btn {
+  background: transparent !important;
+  border-color: #6c757d !important;
+  max-width: 350px !important;
+  margin: 0 auto !important;
+  color: #000 !important;
+}
+.text-right p {
+  text-align: right;
+}
+.common-p p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.heading-p p {
+  color: #acaab9;
+  font-size: 14px;
+  font-weight: 500;
+}
+.text-right .btn {
+  float: right;
+}
+.img-area {
+  display: flex;
+}
+.likes-sec {
+  display: flex;
+}
+.likes-sec div:nth-child(2),
+.likes-sec div:nth-child(3) {
+  margin-left: 70px;
+}
+.likes-sec div > p {
+  color: #acaab9;
+  margin-bottom: 5px;
+}
+.img1 {
+  max-width: 350px;
+  max-height: 506px;
+  overflow: hidden;
+  position: relative;
+}
+.img1 img {
+  object-fit: cover;
+  width: 350px;
+  height: 506px;
+}
+.img2 {
+  max-width: 350px;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.img2 img {
+  object-fit: cover;
+  width: 350px;
+  height: 200px;
+}
+.img3 {
+  max-width: 350px;
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.img3 img {
+  object-fit: cover;
+  width: 350px;
+  height: 250px;
+}

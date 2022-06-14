@@ -2,8 +2,9 @@ import { useState } from 'react';
 import ViewMoreBtn from "../ViewMoreBtn/index";
 import { Link } from 'react-router-dom';
 import "./Popular.css";
+import ImageModal from '../ImageModal/ImageModal';
 
-export default function Popular() {
+export default function Popular(props) {
     const [trandingImgList, setTrandingImgList] = useState([{
         trandingImg: "./assets/poplar_image/img1.png",
         trandingCon: "dssd",
@@ -87,14 +88,17 @@ export default function Popular() {
     ])
     const [fliterCount, setFliterCount] = useState(0)
     const [popValue, setPopValue] = useState(false)
+    const [show, setShow] = useState(false);
+    const [imgPath, setImgPath] = useState();
     const showPopImages = () => {
         setPopValue(false)
     }
     const showNewImages = () => {
         setPopValue(true)
     }
-    const handleImage = () => {
-
+    const handleImage = (event) => {
+        setShow(true);
+        setImgPath(event.target.src);
     }
     return (
         <>
@@ -136,7 +140,7 @@ export default function Popular() {
                                 return (
                                     <li className='popular_img_grid_item' key={index}>
                                         <div className='popular_img'>
-                                            <img src={trand_content.trandingImg} className='img-fluid' onClick={() => handleImage()} />
+                                            <img src={trand_content.trandingImg} className='img-fluid' onClick={handleImage} />
 
                                             <div className='top_img_con'>
                                                 <button className='img_hover_btn'><div className='no_like'>{trand_content.like}</div><img src={trand_content.like ? "./assets/icons/like.png" : "./assets/icons/liked.png"} className='img-fluid' /></button>
@@ -177,6 +181,11 @@ export default function Popular() {
                     </div>
                 </div> */}
             </div>
+            <ImageModal
+                showImageModal={show}
+                hideImageModal={() => setShow(false)}
+                imageModalPath={imgPath}
+            />
         </>
     )
 }
