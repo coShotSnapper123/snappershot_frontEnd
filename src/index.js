@@ -11,7 +11,7 @@ ReactDOM.render(
       <App />
     </Suspense> 
   </React.StrictMode>,
-  document.getElementById('message')
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
