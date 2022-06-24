@@ -8,7 +8,7 @@ export default function ImageModal(props) {
             <Modal
                 show={props.showImageModal}
                 onHide={props.hideImageModal}
-                dialogClassName="modal-90w"
+                dialogClassName="modal-90w image_popup"
                 aria-labelledby="example-custom-modal-styling-title"
                 size="xl"
             >
@@ -24,37 +24,29 @@ export default function ImageModal(props) {
                                 <Row>
                                     <Col md={4}>
                                         <Button variant="secondary" className="mybtn">
-                                            <Badge bg="secondary">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                                </svg>
-                                            </Badge>
+                                            <img className="img-fluid"  src="./assets/icons/like.png"/>
                                         </Button>
                                     </Col>
                                     <Col md={4}>
                                         <Button variant="secondary" className="mybtn plus">
-                                            <Badge bg="secondary">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                                                </svg>
-                                            </Badge>
+                                            <img className="img-fluid"  src="./assets/icons/add_big.png"/>
                                         </Button>
                                     </Col>
                                     <Col md={4}>
                                         <Button variant="secondary" className="mybtn">
-                                            <Badge bg="secondary">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                                                </svg>
-                                            </Badge>
+                                            <img className="img-fluid"  src="./assets/icons/share.png"/>
                                         </Button>
                                     </Col>
                                 </Row>
                                 <Row className="mt-3">
-                                    <Button className="btn download-btn"><i class="fa fa-download"></i> Download</Button>
+                                    <Button className="btn download-btn">
+                                        <img className="img-fluid"  src="./assets/icons/dwonload_icon.png"/> Download
+                                    </Button>
                                 </Row>
-                                <Row className="mt-3">
-                                    <Button className="btn edit-btn"><i class="fa fa-edit"></i> Edit Image</Button>
+                                <Row className="mt-2">
+                                    <Button className="btn edit-btn">
+                                        <img className="img-fluid"  src="./assets/icons/Edit.png"/> Edit Image
+                                    </Button>
                                 </Row>
                                 <Row className="mt-4">
                                     <h5>Picture Name</h5>
@@ -90,7 +82,7 @@ export default function ImageModal(props) {
                                         </div>
                                     </Col>
                                     <Col md={6} className="text-right">
-                                        <Button className="btn download-btn">Follow</Button>
+                                        <Button className="btn download-btn w-100">Follow</Button>
                                     </Col>
                                 </Row>
                             </Col>

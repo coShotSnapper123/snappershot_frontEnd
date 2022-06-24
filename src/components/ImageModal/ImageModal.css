@@ -9,25 +9,45 @@
   width: 750px;
   height: 506px;
 }
-.mybtn {
+.mybtn.btn-secondary{
   width: 100%;
+  border-radius: 8px;
+  background: #575574;
 }
-.mybtn:hover .bg-secondary {
-  background-color: #5c636a !important;
+.mybtn img{
+  max-width:15px;
 }
-.download-btn {
-  background: #f9c500 !important;
-  border-color: #f9c500 !important;
-  max-width: 350px !important;
-  margin: 0 auto !important;
-  color: #000 !important;
+.mybtn:hover, .bg-secondary {
+  background: #575574;
+  background-color: #575574;
+  border-color: #575574;
 }
-.edit-btn {
-  background: transparent !important;
-  border-color: #6c757d !important;
-  max-width: 350px !important;
-  margin: 0 auto !important;
-  color: #000 !important;
+.btn.download-btn,.btn.download-btn:hover{
+  background: #f9c500 ;
+  border-color: #f9c500;
+  max-width: 350px ;
+  margin: 0 auto ;
+  color: #000 ;
+}
+.btn.edit-btn {
+  background: transparent ;
+  border-color: #6c757d ;
+  max-width: 350px ;
+  margin: 0 auto ;
+  color: #000 ;
+  color: #575574;
+}
+.btn.edit-btn,.btn.download-btn {
+  padding:8px;
+  border-radius: 8px;
+}
+.btn.edit-btn:hover{
+  background: none;
+  box-shadow: 2px 2px 3px 2px #00000040;
+  color: #575574;
+}
+.btn.download-btn:hover {
+  box-shadow: 2px 2px 3px 2px #00000040;
 }
 .text-right p {
   text-align: right;
@@ -91,4 +111,17 @@
   object-fit: cover;
   width: 350px;
   height: 250px;
+}
+
+.btn-close{
+    padding: 0;
+    position: absolute;
+    right: -25px;
+    top: -20px;
+    color: #fff;
+    filter: invert(100%);
+}
+
+.image_popup .modal-header{
+  padding:0;
 }
